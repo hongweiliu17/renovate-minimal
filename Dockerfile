@@ -1,6 +1,5 @@
 # Container image that runs your code
-FROM docker.io/snyk/snyk:linux as snyk
-FROM registry.access.redhat.com/ubi8/ubi:8.7-1054.1675788412
+FROM registry.access.redhat.com/ubi8/go-toolset:1.18 as builder
 
 ENV POLICY_PATH="/project"
 
